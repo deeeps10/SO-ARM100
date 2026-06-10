@@ -1,16 +1,16 @@
-# /// script
-# dependencies = ["numpy", "numpy-stl"]
-# ///
 """
 volumetric_validation.py
 
 Place this script inside any part folder and run it:
-    uv run volumetric_validation.py
+    python volumetric_validation.py
 
 What it does:
 - Looks in its own folder for a pair: {stem}.stl and source_{stem}.stl
 - Computes absolute and percentage volume difference
 - Logs result to volumetric_validation.log in the same folder
+
+Requires:
+    pip install numpy-stl
 """
 
 import logging
